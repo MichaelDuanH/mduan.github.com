@@ -1,13 +1,100 @@
-<html>
-  <head>static github file</head>
-  <body>
-    <div>
-      <input type="button" value="button" onclick="fucn()">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    **
+    * Author:            梦禅
+    * Contact:            liulying@126.com
+    * Create Date:        2015.8.17
+    **
+    -->
+    <meta charset="UTF-8">
+    <title>
+        
+            梦禅
+        
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="generator" content="Jekyll" />
+    <meta name="author" content="梦 禅" />
+    <meta name="descriptoin" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="http://mengchan.me/img/favicon.ico" type="image/x-icon" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://mengchan.me/css/main.css" />
+    
+    <!-- <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="http://mengchan.me/js/jquery-1.11.3.min.js"></script>
+    <script src="http://mengchan.me/js/yunlogo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="logo-bg" class="logo-bg">
+        <canvas id="yugen-logo-canvas" width="380" height="220"></canvas>
+        <canvas id="yugen-shadow-canvas" style="display:none;"></canvas>
     </div>
-  </body>
-  <script>
-    function fucn(){
-      alert('welcome to mduan.github.com pages...')
-    }
-  </script>
-</html>
+    <div class="logo"><a href="http://mengchan.me"></a></div>
+    <script>
+        $(document).ready(function () {
+            YugenLogo.initialize( {
+                framerate: 60,
+
+                width: 380,
+                height: 220,
+
+                colorSpeedFactor: 0.4,
+                morphSpeedFactor: 0.4,
+                introSpeedFactor: 2,
+                outroSpeedFactor: 2,
+
+                morphStrengthFactor: 0.8,
+
+                morphBaseSpeedFactor: 0.2,
+                normalOffsetFactor: 1.5,
+
+                maxShapeRotation: 0.2,
+
+                wordOffsetX: 0,
+                wordOffsetY: 0,
+
+                wordScale: 1,
+
+                foregroundScaleX: 0.42,
+                foregroundScaleY: 0.21,
+                backgroundScaleX: 0.36,
+                backgroundScaleY: 0.21,
+
+                shadowAlpha: 0.1,
+
+                shapeQuality: 9,
+
+                containerID: "logo-bg",
+                logoCanvasID: "yugen-logo-canvas",
+
+                colors:[
+                    [new YugenLogo.util.Color(240, 240, 240), new YugenLogo.util.Color(0, 0, 0)],
+                    [new YugenLogo.util.Color(0, 0, 0), new YugenLogo.util.Color(240, 240, 240)]
+                ],
+
+                inputs: [
+                    YugenLogo.input.move,
+                    YugenLogo.input.press
+                ],
+
+                fallbackImages: [
+
+                ]
+            });
+        });
+    </script>
+
+    <ul class="index-nav">
+
+    <li><a href="http://mengchan.me/index.html">首页</a></li>
+
+    <li><a href="http://mengchan.me/blog">文章</a></li>
+
+    <li><a href="http://mengchan.me/works.html">作品</a></li>
+
+...
